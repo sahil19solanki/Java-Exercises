@@ -1,0 +1,23 @@
+22/02/2024
+On the left you’ll find sets of class diagrams. Your job is to
+turn these into valid Java declarations. We did number 1 for
+you (and it was a tough one).
+(Page 233 example)
+
+1 public class Click { }
+  public class Clack extends Click { }
+
+2 public abstract class Top { }
+  public class Tip { }
+
+3 public abstract class Fee { }
+  public abstract class Fi { }
+
+4 public interface Foo { }
+  public class Bar impliments Foo { }
+  public class Baz extends Bar { }
+
+5 public interface Zeta { }
+  public interface Beta { }
+  public class Alpha impliments Zeta { }
+  public class extends Alpha im Beta { } 
