@@ -1,0 +1,42 @@
+Your job is to play compiler and determine which of these statements would compile.
+Some of this code wasn’t covered in the chapter, so you need to work out the answers
+based on what you DID learn, applying the “rules” to these new situations.
+The signatures of the methods used in the exercise are in the boxes.
+BE the Compiler, advanced
+
+private void takeDogs(List<Dog> dogs) { }
+
+private void takeAnimals(List<Animal> animals) { }
+
+private void takeSomeAnimals(List<? extends Animal> animals) { }
+
+private void takeObjects(ArrayList<Object> objects) { }
+
+Compiles?
+
+❑ takeAnimals(new ArrayList<Animal>()); - It will compile
+
+❑ takeDogs(new ArrayList<Animal>()); - It won't compile
+
+❑ takeAnimals(new ArrayList<Dog>()); - It won't compile
+
+❑ takeDogs(new ArrayList<>()); - It will compile
+
+❑ List<Dog> dogs = new ArrayList<>(); - It will compile
+takeDogs(dogs);
+
+❑ takeSomeAnimals(new ArrayList<Dog>()); - It will compile
+
+❑ takeSomeAnimals(new ArrayList<>()); - It will compile
+
+❑ takeSomeAnimals(new ArrayList<Animal>()); - It will compile
+
+❑ List<Animal> animals = new ArrayList<>(); - It will compile
+takeSomeAnimals(animals);
+
+❑ List<Object> objects = new ArrayList<>(); - It won't compile
+takeObjects(objects);
+
+❑ takeObjects(new ArrayList<Dog>()); - It won't compile
+
+❑ takeObjects(new ArrayList<Object>()); - It will compile

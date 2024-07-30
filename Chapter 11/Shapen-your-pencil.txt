@@ -1,0 +1,7 @@
+How could you sort the songs differently?Sharpen your pencil
+Write lambda expressions to sort the songs in these ways (the
+answers are at the end of the chapter):
+Page(342)
+
+Sort by BPM - songList.sort((one, two) -> one.getBpm() - two.getBpm());
+Sort by title in descending order - songList.sort((one, two) -> two.getTitle().compareTo(one.getTitle()));
