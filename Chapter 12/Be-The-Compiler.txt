@@ -1,0 +1,44 @@
+We know this is all new, but have a go at matching each operation name
+to the description of what it does. Try not to look at the next page as you
+complete it, as that will give the game away!
+Page(395)
+
+public interface Runnable {
+    void run();
+}
+
+public interface Consumer<T> {
+    void accept(T t);
+}
+
+public interface Supplier<T> {
+    T get();
+}
+
+public interface Function<T, R> {
+    R apply(T t);
+}
+
+Check the box if the statement would compile.
+
+❑ Runnable r = () -> System.out.println("Hi!"); - It will compile
+
+❑ Consumer<String> c = s -> System.out.println(s); -It will compile 
+
+❑ Supplier<String> s = () -> System.out.println("Some string"); - It won't compile
+
+❑ Consumer<String> c = (s1, s2) -> System.out.println(s1 + s2); - It won't compile
+
+❑ Runnable r = (String str) -> System.out.println(str); - It won't compile
+
+❑ Function<String, Integer> f = s -> s.length(); - It will compile
+
+❑ Supplier<String> s = () -> "Some string"; - It will compile
+
+❑ Consumer<String> c = s -> "String" + s; - It won't compile
+
+❑ Function<String, Integer> f = (int i) -> "i = " + i; - It won't compile
+
+❑ Supplier<String> s = s -> "Some string: " + s; - It won't compile
+
+❑ Function<String, Integer> f = (String s) -> s.length(); - It won't compile

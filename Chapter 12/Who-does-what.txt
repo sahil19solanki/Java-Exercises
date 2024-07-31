@@ -1,0 +1,20 @@
+We know this is all new, but have a go at matching each operation name
+to the description of what it does. Try not to look at the next page as you
+complete it, as that will give the game away!
+Page(374)
+
+1. filter - Only allows elements that match the given criteria to remain in the Stream
+
+2. skip - This is the number of elements at the start of the Stream that will not be processed
+
+3. limit - Sets the maximum number of elements that can be output from this Stream
+
+4. distinct - Use this to make sure duplicates are removed
+
+5. sorted - States the result of the stream should be ordered in some way
+
+6. map - Changes the current element in the stream into something else
+
+7. dropWhile - While a given criteria is true, will not process elements
+
+8. takeWhile - Will only process elements while the given criteria is true

@@ -1,0 +1,29 @@
+A short Java program is listed below. One block of the program is missing. We expect the output of the program should be “1 2 3 4 5”
+but sometimes it’s difficult to get a for loop just right. Your challenge is to match the candidate block of code (on the left)
+with the output that you’d see if the block were inserted. Not all the lines of output will be used, and some of the lines of output might be used more than once.
+Page(372)
+
+class MixForLoops {
+    public static void main(String [] args) {
+        List<Integer> nums = List.of(1, 2, 3, 4, 5);
+        String output = "";
+
+        //Put the code here
+        
+        System.out.println(output);
+    }
+}
+
+if we put following code here we will get following output
+
+for (int i = 1; i < nums.size(); i++)  - 2 3 4 5
+    output += nums.get(i) + " ";
+
+for (Integer num : nums) - 1 2 3 4 5
+    output += nums + " ";   
+
+for (int i = 0; i <= nums.length; i++) - Compiler error
+    output += nums.get(i) + " ";
+
+for (int i = 0; i <= nums.size(); i++) - Exception thrown
+    output += nums.get(i) + " ";
