@@ -1,1 +1,5 @@
-This git repository Contains exercises from book "Head First Java"
+
+# Head First Java
+
+This git repository contains exercises from book "Head First Java"
+
