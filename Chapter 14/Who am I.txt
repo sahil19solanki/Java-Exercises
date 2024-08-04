@@ -1,0 +1,41 @@
+A bunch of Java hotshots, in full costume, are playing the party game “Who
+am I?” They give you a clue, and you try to guess who they are, based on
+what they say. Assume they always tell the truth about themselves. If they
+happen to say something that could be true for more than one guy, then
+write down all for whom that sentence applies. Fill in the blanks next to the
+sentence with the names of one or more attendees.
+Tonight’s attendees:
+Any of the charming personalities from this chapter just
+might show up!
+
+Page(504)
+
+I got the whole GUI, in my hands. - JFrame class
+
+Every event type has one of these. - listener interface
+
+The listener’s key method. - actionPerformed()
+
+This method gives JFrame its size. - setSize()
+
+You add code to this method but never call it. - paintComponent()
+
+When the user actually does something, it’s an _____ . - event
+
+Most of these are event sources. - swing componants
+
+I carry data back to the listener. - event object
+
+An addXxxListener( ) method says an object is an _____ . - event source
+
+How a listener signs up. - add at start and Listener() in end
+
+The method where all the graphics code goes. - paintComponent()
+
+I’m typically bound to an instance. - inner class
+
+The “g” in (Graphics g) is really of this class. - Graphics2D
+
+The method that gets paintComponent( ) rolling. - repaint()
+
+The package where most of the Swingers reside. - javax.swing
