@@ -1,0 +1,57 @@
+Five of the six screens below were made from one
+of the code fragments on the opposite page. Match
+each of the five code fragments with the layout that
+fragment would produce.
+Page(534)
+
+GUI is given on page 534(referencing their number as answer)
+
+Code Fragments
+
+            A
+JFrame frame = new JFrame();
+JPanel panel = new JPanel();
+panel.setBackground(Color.darkGray);
+JButton button = new JButton("tesuji");                                 --->  4
+JButton buttonTwo = new JButton("watari");panel.add(button);
+frame.getContentPane().add(BorderLayout.NORTH, buttonTwo);
+frame.getContentPane().add(BorderLayout.EAST, panel);
+
+            B
+JFrame frame = new JFrame();
+JPanel panel = new JPanel();
+panel.setBackground(Color.darkGray);
+JButton button = new JButton("tesuji");
+JButton buttonTwo = new JButton("watari");                      --->  6
+panel.add(buttonTwo);
+frame.getContentPane().add(BorderLayout.CENTER, button);
+frame.getContentPane().add(BorderLayout.EAST, panel);
+
+            C
+JFrame frame = new JFrame();
+JPanel panel = new JPanel();
+panel.setBackground(Color.darkGray);
+JButton button = new JButton("tesuji");
+JButton buttonTwo = new JButton("watari");                      --->  1
+panel.add(buttonTwo);
+frame.getContentPane().add(BorderLayout.CENTER, button);
+
+            D
+JFrame frame = new JFrame();
+JPanel panel = new JPanel();
+panel.setBackground(Color.darkGray);
+JButton button = new JButton("tesuji");
+JButton buttonTwo = new JButton("watari");                      --->  2
+frame.getContentPane().add(BorderLayout.NORTH, panel);
+panel.add(buttonTwo);
+frame.getContentPane().add(BorderLayout.CENTER, button);
+
+            E
+JFrame frame = new JFrame();
+JPanel panel = new JPanel();
+panel.setBackground(Color.darkGray);
+JButton button = new JButton("tesuji"); 
+JButton buttonTwo = new JButton("watari");                      --->  3
+frame.getContentPane().add(BorderLayout.SOUTH, panel);
+panel.add(buttonTwo);
+frame.getContentPane().add(BorderLayout.NORTH, button);
