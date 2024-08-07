@@ -1,0 +1,28 @@
+Sharpen your pencil 1
+
+Test your memory of the classes for reading and writing from a
+SocketChannel. Try not to look at the opposite page!
+
+Page(600)
+
+To read text from a SocketChannel: - Reader channelReader = Channels.newReader(socketChannel, StandardCharsets.UTF_8);
+                                     BufferedReader reader = new BufferedReader(channelReader);
+                                     String advice = reader.readLine();
+
+To send text to a SocketChannel: - Writer writer = Channels.newWriter(socketChannel, StandardCharsets.UTF_8);
+                                   PrintWriter printWriter = new PrintWriter(writer);
+                                   writer.println("message to send");
+
+Sharpen your pencil 2
+
+What two pieces of information does the client need in order to make a connection with a
+server?
+--->IP and Port number
+
+Which TCP port numbers are reserved for “well-known services” like HTTP and FTP? 
+--->FTP - 20
+--->HTTP - 80
+
+TRUE or FALSE: The range of valid TCP port numbers can be represented
+by a short primitive.
+---> True
